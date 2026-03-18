@@ -127,10 +127,12 @@ nav a:hover { color: var(--primary); }
     position: fixed;
     pointer-events: none;
     z-index: 10000;
-    animation: flyUp 1.5s forwards ease-out;
+    font-size: 2rem;
+    animation: flyOut 1.5s forwards ease-out;
 }
 
-@keyframes flyUp {
+@keyframes flyOut {
     0% { transform: translate(0, 0) scale(1); opacity: 1; }
     100% { transform: translate(var(--x), var(--y)) scale(1.5); opacity: 0; }
 }
+
