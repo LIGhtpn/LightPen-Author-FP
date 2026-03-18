@@ -38,12 +38,12 @@ nav a { color: white; text-decoration: none; font-weight: bold; }
     margin: 8px 0; text-decoration: none; text-align: center; border-radius: 5px; font-weight: bold;
 }
 
-/* EMOJI ANIMATION - If this is missing, emojis won't work */
+/* Animation for the emojis */
 .emoji-fly {
     position: fixed;
     pointer-events: none;
-    z-index: 9999;
-    font-size: 2.5rem;
+    z-index: 10000;
+    font-size: 2rem;
     animation: flyOut 1.2s forwards ease-out;
 }
 
@@ -52,4 +52,23 @@ nav a { color: white; text-decoration: none; font-weight: bold; }
     100% { transform: translate(var(--x), var(--y)) scale(2); opacity: 0; }
 }
 
-.hint { color: #666; font-size: 0.8rem; margin-top: 10px; }
+/* Modal Layout */
+.modal-body { display: flex; flex-wrap: wrap; gap: 30px; }
+.modal-left, .modal-right { flex: 1; min-width: 300px; }
+#modalCover { width: 100%; border-radius: 10px; cursor: pointer; box-shadow: 0 0 20px rgba(139,0,0,0.5); }
+.hint { text-align: center; color: #888; font-style: italic; margin-top: 10px; }
+
+/* Read Now Buttons */
+.buy-btn {
+    display: block;
+    background: #8b0000;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.buy-btn:hover { background: #ff0000; transform: scale(1.02); }
