@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Light Pen | Author Portfolio</title>
+    <title>Light Pen | Worlds of Creative Madness</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,43 +13,50 @@
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#books">Books</a></li>
+            <li><a href="#contact">Interact</a></li>
         </ul>
     </nav>
 
-    <header class="hero" id="about">
-        <img src="1002488591.png" alt="Light Pen" class="profile-img">
-        <h1>Hi. I’m Light Pen.</h1>
-        <p>I have multiple personalities, but legally they’re called pen names.</p>
+    <header class="hero">
+        <div class="hero-content">
+            <img src="1002488591.png" alt="Light Pen" class="profile-img">
+            <h1>Welcome to my Reality of Many Worlds</h1>
+            <p>Author. Gamer. Coffee Addict.</p>
+        </div>
     </header>
 
-    <section class="container">
+    <section id="about" class="container">
+        <h2>The Person Behind the Pens</h2>
         <div class="about-text">
-            <p>If you’re reading a story with a handsome male lead who refuses to suffer peacefully, that’s me as <strong>Light Pen</strong>.</p>
-            <p>If it's emotional and romantic, you’ve met <strong>Author Eliora</strong>.</p>
-            <p>If it's creative madness, you've met <strong>Heavenly_Daoist</strong>.</p>
-            <p><em>I love Jesus Christ. That’s the one constant in all the chaos.</em></p>
+            <p>Hi. I’m <strong>Light Pen</strong>. Yes, I have multiple personalities, but legally they’re called pen names.</p>
+            <div class="identities">
+                <div class="card"><h3>Light Pen</h3><p>Author of Handsome male leads who refuse to suffer.</p></div>
+                <div class="card"><h3>Author Eliora</h3><p>Curator of Emotional, romantic, and makes you question your single life.</p></div>
+                <div class="card"><h3>Heavenly_Daoist</h3><p>Bringer of Pure creative madness. I don't even argue with this version.</p></div>
+            </div>
+            <p>I overthink everything. Most of my ideas come from overthinking… and coffee. A lot of coffee.</p>
+            <p><em>And above all, I love Jesus Christ. That’s the one constant in all the chaos called 'my life'.</em></p>
         </div>
     </section>
 
     <section id="books" class="container">
-        <h2>My Worlds</h2>
-        <div class="book-grid" id="bookGrid"></div>
+        <h2>My Books</h2>
+        <div class="book-grid" id="bookGrid">
+            </div>
     </section>
 
     <div id="bookModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <div class="modal-body">
-                <div class="modal-left">
-                    <img id="modalCover" src="" alt="Book Cover">
-                    <p class="hint">Click cover for a surprise!</p>
-                </div>
-                <div class="modal-right">
+                <img id="modalCover" src="" alt="Book Cover">
+                <div class="modal-info">
                     <h2 id="modalTitle"></h2>
-                    <div id="modalBlurb"></div>
-                    <div class="link-section">
-                        <h3>Read Now:</h3>
-                        <div class="link-list"></div> </div>
+                    <p id="modalBlurb"></p>
+                    <div class="actions">
+                        <button class="btn-buy">Buy Now</button>
+                        <button class="btn-gift">Send a Gift</button>
+                    </div>
                 </div>
             </div>
         </div>
