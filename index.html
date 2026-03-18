@@ -45,23 +45,28 @@
             </div>
     </section>
 
-    <div id="bookModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="modal-body">
+<div id="bookModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+            <div class="modal-left">
                 <img id="modalCover" src="" alt="Book Cover">
-                <div class="modal-info">
-                    <h2 id="modalTitle"></h2>
-                    <p id="modalBlurb"></p>
-                    <div class="actions">
-                        <button class="btn-buy">Buy Now</button>
-                        <button class="btn-gift">Send a Gift</button>
-                    </div>
-                </div>
+                <p class="hint">✨ Click the cover for a surprise! ✨</p>
+            </div>
+            
+            <div class="modal-right">
+                <h2 id="modalTitle"></h2>
+                <div id="modalBlurb"></div>
+                
+                <div class="link-section">
+                    <h3>Available on:</h3>
+                    <div class="link-list"></div> </div>
             </div>
         </div>
     </div>
+</div>
 
-    <script src="script.js"></script>
-</body>
-</html>
+<section id="books" class="container">
+    <h2>My Worlds</h2>
+    <div class="book-grid" id="bookGrid"></div>
+</section>
